@@ -29,6 +29,13 @@
 			remoteGlobalIDString = 1A6B1632221FD160002BA5C4;
 			remoteInfo = SwiftyCalculator;
 		};
+		1A6B1664221FD623002BA5C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6B1628221FD0C6002BA5C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6B164E221FD24D002BA5C4;
+			remoteInfo = SwiftyCalculatorExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -218,6 +225,7 @@
 			);
 			dependencies = (
 				1A6B1647221FD1D8002BA5C4 /* PBXTargetDependency */,
+				1A6B1665221FD623002BA5C4 /* PBXTargetDependency */,
 			);
 			name = SwiftyCalculatorTests;
 			productName = SwiftyCalculatorTests;
@@ -256,6 +264,7 @@
 					};
 					1A6B163F221FD1D8002BA5C4 = {
 						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1A6B164E221FD24D002BA5C4;
 					};
 					1A6B164E221FD24D002BA5C4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -435,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = 1A6B1632221FD160002BA5C4 /* SwiftyCalculator */;
 			targetProxy = 1A6B1646221FD1D8002BA5C4 /* PBXContainerItemProxy */;
+		};
+		1A6B1665221FD623002BA5C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A6B164E221FD24D002BA5C4 /* SwiftyCalculatorExample */;
+			targetProxy = 1A6B1664221FD623002BA5C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,6 +713,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyCalculatorExample.app/SwiftyCalculatorExample";
 			};
 			name = Debug;
 		};
@@ -756,6 +771,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -766,6 +782,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyCalculatorExample.app/SwiftyCalculatorExample";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
