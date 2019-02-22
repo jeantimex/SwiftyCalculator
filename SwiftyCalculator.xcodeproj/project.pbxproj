@@ -15,6 +15,7 @@
 		1A6B1657221FD24D002BA5C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B1655221FD24D002BA5C4 /* Main.storyboard */; };
 		1A6B1659221FD24E002BA5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B1658221FD24E002BA5C4 /* Assets.xcassets */; };
 		1A6B165C221FD24E002BA5C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B165A221FD24E002BA5C4 /* LaunchScreen.storyboard */; };
+		1A6B1663221FD544002BA5C4 /* SwiftyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B1662221FD544002BA5C4 /* SwiftyCalculator.swift */; };
 		421DE2AAB031120886F1FA57 /* Pods_SwiftyCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0634CE74125D27FB4DE28024 /* Pods_SwiftyCalculatorTests.framework */; };
 		6A23FA3F3CF9CCD0E8544473 /* Pods_SwiftyCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89D6C2EEBB72BB9228C0886 /* Pods_SwiftyCalculator.framework */; };
 		D73FD0A216CFF6076F101700 /* Pods_SwiftyCalculatorExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36EF4CDC15D81B27BAEED9A /* Pods_SwiftyCalculatorExample.framework */; };
@@ -46,6 +47,7 @@
 		1A6B1658221FD24E002BA5C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6B165B221FD24E002BA5C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6B165D221FD24E002BA5C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6B1662221FD544002BA5C4 /* SwiftyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCalculator.swift; sourceTree = "<group>"; };
 		2C08C73212C49A5A7FA43965 /* Pods-SwiftyCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCalculator.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyCalculator/Pods-SwiftyCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		5815C4502C61826B8D7008F7 /* Pods-SwiftyCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCalculatorTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyCalculatorTests/Pods-SwiftyCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		6E0BC102ECFB1DD6BB878FA7 /* Pods-SwiftyCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyCalculator.release.xcconfig"; path = "Target Support Files/Pods-SwiftyCalculator/Pods-SwiftyCalculator.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		1A6B1635221FD160002BA5C4 /* SwiftyCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				1A6B1661221FD544002BA5C4 /* Classes */,
 				1A6B1636221FD160002BA5C4 /* SwiftyCalculator.h */,
 				1A6B1637221FD160002BA5C4 /* Info.plist */,
 			);
@@ -137,6 +140,14 @@
 			path = SwiftyCalculatorExample;
 			sourceTree = "<group>";
 		};
+		1A6B1661221FD544002BA5C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A6B1662221FD544002BA5C4 /* SwiftyCalculator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		A726F0B6EEEB137639D71596 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +168,6 @@
 				C77EF68EFA8C2B2238372D8C /* Pods-SwiftyCalculatorTests.debug.xcconfig */,
 				5815C4502C61826B8D7008F7 /* Pods-SwiftyCalculatorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -397,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6B1663221FD544002BA5C4 /* SwiftyCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C77EF68EFA8C2B2238372D8C /* Pods-SwiftyCalculatorTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -694,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5815C4502C61826B8D7008F7 /* Pods-SwiftyCalculatorTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
